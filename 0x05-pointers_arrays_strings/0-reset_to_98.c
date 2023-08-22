@@ -4,7 +4,7 @@
  *
  * and updates the value  points to to 98
  *
- * @n: input
+ * @n: Input
  *
  * Return: n
  */
