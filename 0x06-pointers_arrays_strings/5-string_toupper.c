@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * String_toupper - Change all loweRcase to upPercase
+ * string_toupper - Change all loweRcase to upPercase
  *
  * @x: pointer
  *
