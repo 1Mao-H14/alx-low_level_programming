@@ -2,20 +2,20 @@
 /**
  * _memset - fill a block of memory with a specific value
  *
- * @a: Starting Address of memory to be filled
- * @d: The desired value
- * @s: number of bytes to  CHanged
+ * @s: Starting Address of memory to be filled
+ * @b: The desired value
+ * @n: number of bytes to  CHanged
  *
- * Return: changed array with new value for s bytes
+ * Return: changed array with new value for n bytes
  */
-char *_memset(char *a, char d, unsigned int s)
+char *_memset(char *s, char b, unsigned int n)
 {
 	int h = 0;
 
-	for (; s > 0; h++)
+	for (; n > 0; h++)
 	{
-		a[s] = d;
-		s--;
+		s[h] = b;
+		n--;
 	}
-	return (a);
+	return (s);
 }
