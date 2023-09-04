@@ -44,3 +44,4 @@ int _atoi(char *C)
 
 	return (n);
 }
+

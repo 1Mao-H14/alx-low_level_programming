@@ -28,3 +28,4 @@ char *_strncpy(char *dest, char *src, int m)
 
 	return (dest);
 }
+
