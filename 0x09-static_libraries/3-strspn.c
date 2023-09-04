@@ -2,31 +2,28 @@
 /**
  * _strspn - Entry point
  *
- * @s: input
- *
- * @accept: input
- *
- * Return: Always 0 (Success)
+ * @s: Input
+ * @accept: Input
+ * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int h = 0;
-	int x;
+	unsigned int X = 0;
+	int W;
 
 	while (*s)
 	{
-		for (x = 0; accept[x]; x++)
+		for (W = 0; accept[W]; W++)
 		{
-			if (*s == accept[x])
+			if (*s == accept[W])
 			{
-				h++;
+				X++;
 				break;
 			}
-			else if (accept[x + 1] == '\0')
-				return (h);
+			else if (accept[W + 1] == '\0')
+				return (X);
 		}
 		s++;
 	}
-	return (h);
+	return (X);
 }
-

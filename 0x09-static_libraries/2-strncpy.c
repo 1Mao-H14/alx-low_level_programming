@@ -2,30 +2,27 @@
 /**
  * _strncpy - copy a string
  *
- * @dest: Input value
- *
- * @src: Input value
- *
- * @m: Input value
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
  * Return: dest
  */
-char *_strncpy(char *dest, char *src, int m)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int h;
+	int w;
 
-	h = 0;
-	while (h < m && src[h] != '\0')
+	w = 0;
+	while (w < n && src[w] != '\0')
 	{
-		dest[h] = src[h];
-		h++;
+		dest[w] = src[w];
+		w++;
 	}
-	while (h < m)
+	while (w < n)
 	{
-		dest[h] = '\0';
-		h++;
+		dest[w] = '\0';
+		w++;
 	}
 
 	return (dest);
 }
-
