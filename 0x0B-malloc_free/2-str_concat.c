@@ -14,9 +14,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int h;
-	int k;
+	int i, h, k;
 	char *concat_cope;
 
 
@@ -31,7 +29,6 @@ return (s2 = "");
 i = h = 0;
 while (s1[i] != '\0')
 i++;
-i = h = 0;
 while (s2[h] != '\0')
 h++;
 
@@ -40,10 +37,10 @@ if (concat_cope == NULL)
 return (NULL);
 
 for (k = 0 ; k < i ; k++)
-s1[i] = concat_cope[i];
+s1[k] = concat_cope[k];
 
 for (k = 0; k < h; k++)
-s2[i + h] = concat_cope[h];
+s2[i + k] = concat_cope[k];
 
 concat_cope[i + h] = '\0';
 return (concat_cope);
