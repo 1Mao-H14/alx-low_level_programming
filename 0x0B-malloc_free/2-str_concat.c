@@ -1,47 +1,41 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * str_concat - get ends of input and add together for size
- *
- * @s1: input one to concat
- *
- * @s2: input two to concat
- *
- * Return: concat of s1 and s2
- *
+ *@s1: input one to concat
+ *@s2: input two to concat
+ *Return: concat of s1 and s2
  */
 
 char *str_concat(char *s1, char *s2)
-{
-	int i, h, k;
-	char *concat_cope;
 
+{
+	char *concate_cope;
+	int i, v;
 
 if (s1 == NULL)
-
-return (s1 = "");
-
+s1 = "";
 if (s2 == NULL)
-
-return (s2 = "");
-
-i = h = 0;
+s2 = "";
+i = v = 0;
 while (s1[i] != '\0')
 i++;
-while (s2[h] != '\0')
-h++;
-
-concat_cope = malloc(sizeof(char) * (i + h + 1));
-if (concat_cope == NULL)
+while (s2[v] != '\0')
+v++;
+concate_cope = malloc(sizeof(char) * (i + v + 1));
+if (concate_cope == NULL)
 return (NULL);
-
-for (k = 0 ; k < i ; k++)
-s1[k] = concat_cope[k];
-
-for (k = 0; k < h; k++)
-s2[i + k] = concat_cope[k];
-
-concat_cope[i + h] = '\0';
-return (concat_cope);
+i = v = 0;
+while (s1[i] != '\0')
+{
+concate_cope[i] = s1[i];
+i++;
+}
+while (s2[v] != '\0')
+{
+concate_cope[i] = s2[v];
+i++, v++;
+}
+concate_cope[i] = '\0';
+return (concate_cope);
 }
