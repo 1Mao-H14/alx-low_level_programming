@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * argstostr - function that concatenates all the arguments of your program.
+ * argstostr - main entry function that concatenate.
  * @ac: int input
  * @av: double pointer array
  *
@@ -12,33 +11,32 @@
 char *argstostr(int ac, char **av)
 
 {
-	int v, w, a = 0, q = 0;
-	char *string;
+	int v, s, y = 0, x = 0;
+
+	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
 	for (v = 0; v < ac; v++)
 	{
-		for (w = 0; av[v][w]; w++)
-			q++;
+		for (s = 0; av[v][s]; s++)
+			x++;
 	}
-	q += ac;
-
-	string = malloc(sizeof(char) * q + 1);
-	if (string == NULL)
+	x += ac;
+	str = malloc(sizeof(char) * x + 1);
+	if (str == NULL)
 		return (NULL);
 	for (v = 0; v < ac; v++)
 	{
-	for (q = 0; av[v][w]; w++)
+	for (s = 0; av[v][s]; s++)
 	{
-		string[a] = av[v][w];
-		a++;
+		str[y] = av[v][s];
+		y++;
 	}
-	if (string[a] == '\0')
+	if (str[y] == '\0')
 	{
-		string[a++] = '\n';
+		str[y++] = '\n';
 	}
 	}
-	return (string);
+	return (str);
 }
