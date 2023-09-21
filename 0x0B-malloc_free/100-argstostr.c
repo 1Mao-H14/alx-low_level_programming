@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 
 {
 	int v, w, a = 0, q = 0;
-	char *kkk;
+	char *string;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -25,20 +25,20 @@ char *argstostr(int ac, char **av)
 	}
 	q += ac;
 
-	kkk = malloc(sizeof(char) * q + 1);
-	if (kkk == NULL)
+	string = malloc(sizeof(char) * q + 1);
+	if (string == NULL)
 		return (NULL);
 	for (v = 0; v < ac; v++)
 	{
 	for (q = 0; av[v][w]; w++)
 	{
-		kkk[a] = av[v][w];
+		string[a] = av[v][w];
 		a++;
 	}
-	if (kkk[a] == '\0')
+	if (string[a] == '\0')
 	{
-		kkk[a++] = '\n';
+		string[a++] = '\n';
 	}
 	}
-	return (kkk);
+	return (string);
 }
