@@ -3,7 +3,7 @@
 /**
  * main - a FUNCTION THTAS Prints The Name Of THE FILE
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 int main(void)
 {
