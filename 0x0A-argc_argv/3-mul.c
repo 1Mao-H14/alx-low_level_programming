@@ -15,9 +15,12 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		int int_1;
+		int int_2;
+		int resulte;
 		int_1 = atoi(argv[1]);
 		int_2 = atoi(argv[2]);
-		resulte = int_1 * int_2
+		resulte = int_1 * int_2;
 		printf("%d\n", resulte);
 		return (0);
 	}
