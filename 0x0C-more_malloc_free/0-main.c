@@ -3,6 +3,15 @@
 #include <stdlib.h>
 #include <limits.h>
 
+void *malloc_checked(size_t size)
+{
+void *ptr = malloc(size);
+if (ptr == NULL) {
+fprintf(stderr, "Memory allocation failed\n");
+exit(EXIT_FAILURE);
+}
+return ptr;
+}
 /**
  * main - check the code
  *
