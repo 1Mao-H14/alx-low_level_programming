@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main() {
-    printf("The program was compiled from the file: %s\n", __FILE__);
-    return 0;
+/**
+ * main - prints the name of the file it was compiled from
+ *
+ * Return: good to go ok
+ */
+
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
 }
