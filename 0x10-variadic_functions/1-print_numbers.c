@@ -2,14 +2,14 @@
 	#include <stdio.h>
 	#include <stdarg.h>
 
+/**
+*print_numbers - Prints numbers, followed by a new line.
+*@separator: input of  The string to be printed between numbers.
+*@n: input of  The number of integers PASSED
+*@...: A variable number of numbers to be printed.
+*/
 
-	/**
-	 * print_numbers - a function thats Prints numbers, followed by a new line.
-	 * @separator:input of  The string to be printed between numbers.
-	 * @n:input of  The number of integers PASSED 
-	 * @...:input variable NUMBER of NUMBRE
-	 */
-	void print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		va_list xxx;
 		unsigned int ooo;
