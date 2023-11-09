@@ -5,7 +5,7 @@
 /**
  *sum_them_all - a function thats Returns the sum of all its paramters.
  *@n: The number of paramters passed
- *@...: A variable number of paramters the SUM 
+ *@...: A variable number of paramters the SUM
  *Return: If n == 0 - 0.
  *else - the SUM of All PARAMETRES.
  */
