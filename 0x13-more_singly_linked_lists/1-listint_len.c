@@ -2,7 +2,7 @@
 
 /**
  * listint_len - Returns the number of elements in a linked list.
- * @head: Pointer to the head of the linked list (of type listint_t) to traverse.
+ * @head: Pointer to the head of the linked list (of type listint_t)traverse.
  *
  * Return: Number of nodes in the linked list.
  */
