@@ -9,7 +9,8 @@
  *
  * Return: Pointer to the new node, or NULL.
  */
-listint_t *insert_nodeint_at_index(listint_t **list, unsigned int index, int data)
+listint_t
+*insert_nodeint_at_index(listint_t **list, unsigned int index, int data)
 {
 	unsigned int i;
 	listint_t *new_node;
