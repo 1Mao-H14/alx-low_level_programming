@@ -1,13 +1,14 @@
 #include "search_algos.h"
 
 /**
- * recursive_search - searches for a value in an array of
+ * recursive_search - A FUNCTION THATS searches for a value in an
+ * Array of
  * integers using the Binary search algorithm
  *
  *
- * @array: input array
- * @size: size of the array
- * @value: value to search in
+ * @array:argument  input array
+ * @size: argument size of the array
+ * @value: argument value to search
  * Return: index of the number
  */
 int recursive_search(int *array, size_t size, int value)
@@ -40,12 +41,12 @@ int recursive_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - calls to binary_search to return
+ * binary_search -A function that  calls to binary_search to return
  * the index of the number
  *
- * @array: input array
- * @size: size of the array
- * @value: value to search in
+ * @array: argument input array
+ * @size: argument size of the array
+ * @value: argument  value to search in
  * Return: index of the number
  */
 int binary_search(int *array, size_t size, int value)
@@ -61,12 +62,12 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * exponential_search - searches for a value in an array of
+ * exponential_search - A FUNCTION THATS searches for a value in an array of
  * integers using the Exponential search algorithm
  *
- * @array: input array
- * @size: size of the array
- * @value: value to search in
+ * @array: argument input array
+ * @size: argument size of the array
+ * @value:argument  value to search in
  * Return: index of the number
  */
 int exponential_search(int *array, size_t size, int value)
